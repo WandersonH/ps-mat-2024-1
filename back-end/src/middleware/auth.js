@@ -7,7 +7,11 @@ export default function (req, res, next) {
     token
   */
 
-    const bypassRoutes = [{ url: '/users/login', method: 'POST' }];
+    const bypassRoutes = [
+      { url: '/users/login', method: 'POST' },
+      { url: '/about', method: 'POST' },
+      { url: '/about/1', method: 'GET' } // Allowing GET /about/1 without token
+    ];
   /* 
     Verificamos se a rota atual corresponde a
     alguma das exceções cadastradas acima. Sendo

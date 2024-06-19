@@ -12,6 +12,7 @@ import CustomerList from '../pages/customer/CustomerList';
   quando há uma mudança de rota no front-end
 */
 import AboutPage from '../pages/AboutPage';
+import AboutAluno from '../pages/AboutAluno';
 import CarForm from '../pages/cars/CarForm';
 import CarList from '../pages/cars/CarList';
 import AuthGuard from './AuthGuard';
@@ -82,6 +83,7 @@ export default function AppRoutes() {
       />
 
       <Route path='/about' element={<AboutPage />} />
+      <Route path='/about-aluno' element={<AboutAluno />} />
     </Routes>
   );
 }

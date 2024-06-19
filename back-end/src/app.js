@@ -43,4 +43,8 @@ app.use('/users', userRoute)
 import customerRoute from './routes/customer.js'
 app.use('/customers', customerRoute)
 
+import aboutRoute from './routes/about.js';
+app.use('/about', aboutRoute);
+
+
 export default app;
